@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "opensource-portfolio"
+          project: "joshuaa-html-showca-99"
           entrypoint: "main.ts"
           root: "."
