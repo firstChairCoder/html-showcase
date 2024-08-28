@@ -134,8 +134,8 @@ function Experience() {
 
   return (
     <section class="p-4 flex flex-wrap-reverse justify-evenly items-center gap-4">
-      <div class="flex flex-col">
-{/*         {experiences.map((experience, i) => (
+{/*       <div class="flex flex-col">
+        {experiences.map((experience, i) => (
           <>
             {i > 0 &&
               (
@@ -144,7 +144,7 @@ function Experience() {
                     <span className="w-1 aspect-square bg-gray-500 rounded-full" />
                   ))}
                 </div>
-              )} */}
+              )}
 
             <div class="card">
               <div class="card-body p-4">
@@ -177,7 +177,7 @@ function Experience() {
             </div>
           </>
         ))}
-      </div>
+      </div> */}
       <h1 class="text-3xl font-bold text-primary">Work Experience</h1>
     </section>
   );
