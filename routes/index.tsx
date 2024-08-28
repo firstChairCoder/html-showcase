@@ -134,7 +134,7 @@ function Experience() {
 
   return (
     <section class="p-4 flex flex-wrap-reverse justify-evenly items-center gap-4">
-{/*       <div class="flex flex-col">
+     <div class="flex flex-col">
         {experiences.map((experience, i) => (
           <>
             {i > 0 &&
@@ -177,7 +177,7 @@ function Experience() {
             </div>
           </>
         ))}
-      </div> */}
+      </div>
       <h1 class="text-3xl font-bold text-primary">Work Experience</h1>
     </section>
   );
@@ -295,7 +295,6 @@ export default function Home() {
       <Hero />
       <Values />
       <Projects />
-      <Experience />
       <Technologies />
     </>
   );
