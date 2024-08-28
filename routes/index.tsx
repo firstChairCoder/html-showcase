@@ -39,13 +39,13 @@ function Hero() {
           <TypingAnimation
             strings={[
               '"Hello, World!"',
-              "I'm a developer.",
+              "Here's what we've made",
             ]}
             autoStart={true}
           />
         </h1>
         <p class="text-xl mt-4">
-          I build web applications and websites using modern technologies.
+          We build websites using modern technologies.
         </p>
       </div>
       <SpinningModel />
@@ -214,7 +214,7 @@ function Projects() {
   return (
     <section class="p-4 my-8">
       <h1 class="text-3xl font-bold text-primary text-center mb-4">
-        Projects and Contributions
+        Projects
       </h1>
       <div class="flex flex-wrap justify-center items-center gap-2">
         {projects.map((project) => (
