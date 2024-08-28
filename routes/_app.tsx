@@ -88,7 +88,7 @@ export default function App({ Component }: PageProps) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <MetaTags credentials={credentials} url={url} />
-        <title>Developer Portfolio | {credentials.name}</title>
+        <title>Developers Showcase</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body class="min-h-screen flex flex-col max-w-screen-xl mx-auto">
@@ -99,30 +99,7 @@ export default function App({ Component }: PageProps) {
           <Component />
         </main>
         <footer class="mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
-          <aside>
-            <span>MIT licensed with ❤️ by Michael</span>
-            <span>
-              3D Art by{" "}
-              <a
-                class="underline"
-                href="https://sketchfab.com/KJLOYH"
-                target="_blank"
-              >
-                Valery Kharitonov
-              </a>
-            </span>
-          </aside>
-          <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-            {socials.map((social) => (
-              <a
-                href={social.url}
-                target="_blank"
-                aria-label={social.name}
-              >
-                <Icon icon={social.icon} width="24" height="24" />
-              </a>
-            ))}
-          </nav>
+          
         </footer>
       </body>
     </html>
