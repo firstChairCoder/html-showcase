@@ -85,6 +85,28 @@ function Values() {
     <>
       <Wave flip={false} />
       <section class="p-4 flex justify-center items-center gap-4 flex-wrap bg-primary">
+        
+          <div
+            class={"card md:h-auto md:max-w-64 bg-base-100 flex-row md:flex-col shadow-lg"}
+          >
+            <figure class="w-1/3 md:h-48 md:w-auto rounded-none rounded-l-box md:rounded-none md:rounded-t-box">
+              
+            </figure>
+            <div class="card-body w-2/3 md:w-auto">
+             
+            </div>
+          </div>
+        
+      </section>
+      <Wave flip={true} />
+    </>
+  );
+}
+
+/**
+ *  <>
+      <Wave flip={false} />
+      <section class="p-4 flex justify-center items-center gap-4 flex-wrap bg-primary">
         {values.map((value, i) => (
           <div
             class={"card md:h-auto md:max-w-64 bg-base-100 flex-row md:flex-col shadow-lg" +
@@ -106,8 +128,28 @@ function Values() {
       </section>
       <Wave flip={true} />
     </>
-  );
-}
+ */
+
+/**
+ *  <>
+      <Wave flip={false} />
+      <section class="p-4 flex justify-center items-center gap-4 flex-wrap bg-primary">
+        
+          <div
+            class={"card md:h-auto md:max-w-64 bg-base-100 flex-row md:flex-col shadow-lg"}
+          >
+            <figure class="w-1/3 md:h-48 md:w-auto rounded-none rounded-l-box md:rounded-none md:rounded-t-box">
+              
+            </figure>
+            <div class="card-body w-2/3 md:w-auto">
+             
+            </div>
+          </div>
+        
+      </section>
+      <Wave flip={true} />
+    </>
+ */
 
 interface Experience {
   title: string;
@@ -194,20 +236,28 @@ interface Project {
 function Projects() {
   const projects: Project[] = [
     {
-      title: "Denoland Fresh",
+      title: "About page",
       description:
-        "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
-      link: "https://fresh.deno.dev/",
-      type: "Open Source",
-      icon: "logos:deno",
+        "An about page with minimal styling. This shows formatting and HTML structuring skills.",
+      link: "https://firstchaircoder.github.io/super-guacamole/",
+      type: "EKENE",
+      icon: "logos:css-3",
     },
     {
-      title: "Dogr.",
+      title: "Bread recipe",
       description:
-        "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
-      link: "https://dogr.vercel.app/",
-      type: "Personal",
-      icon: "logos:vue",
+        "An SPA with a delicious bread recipe. Also includes the use of custom Google Fonts.",
+      link: "https://firstchaircoder.github.io/ideal-octo-engine/",
+      type: "DIVINE",
+      icon: "logos:css-3",
+    },
+    {
+      title: "Shawarma Recipe",
+      description:
+        "Another recipe, this time to make yummy, authentic shawarmas",
+      link: "https://firstchaircoder.github.io/potential-chainsaw/",
+      type: "MAXWELL",
+      icon: "logos:css-3",
     },
   ];
 
@@ -261,7 +311,7 @@ function Technologies() {
       <div class="p-4 flex justify-center items-center flex-wrap gap-4">
         {technologies.map((technology) => (
           <Icon
-            class="w-16 h-16"
+            class="w-32 h-32"
             icon={technology}
             width="none"
             height="none"
