@@ -32,16 +32,16 @@ export default function AppBar() {
           width="none"
           height="none"
         />
-        Portfolio
+        Showcase
       </a>
       <ul class="flex gap-2">
         <li>
           <a
             class="btn btn-primary text-base-100"
-            href="/cv.pdf"
+            href=""
             download
           >
-            Download CV
+            See All
           </a>
         </li>
         <li>
