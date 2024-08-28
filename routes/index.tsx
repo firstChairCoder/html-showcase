@@ -39,13 +39,13 @@ function Hero() {
           <TypingAnimation
             strings={[
               '"Hello, World!"',
-              "I'm a developer.",
+              "Here's what we've made",
             ]}
             autoStart={true}
           />
         </h1>
         <p class="text-xl mt-4">
-          I build web applications and websites using modern technologies.
+          We build websites using modern technologies.
         </p>
       </div>
       <SpinningModel />
@@ -214,7 +214,7 @@ function Projects() {
   return (
     <section class="p-4 my-8">
       <h1 class="text-3xl font-bold text-primary text-center mb-4">
-        Projects and Contributions
+        Projects
       </h1>
       <div class="flex flex-wrap justify-center items-center gap-2">
         {projects.map((project) => (
@@ -248,26 +248,9 @@ function Projects() {
 
 function Technologies() {
   const technologies = [
-    "vscode-icons:file-type-js-official",
     "logos:html-5",
     "logos:css-3",
-    "logos:php",
-    "logos:typescript-icon",
-    "skill-icons:react-dark",
-    "logos:vue",
-    "devicon:nextjs",
-    "skill-icons:nuxtjs-dark",
-    "logos:nestjs",
-    "logos:fresh",
-    "skill-icons:laravel-dark",
-    "skill-icons:tailwindcss-dark",
-    "logos:deno",
-    "devicon:nodejs",
-    "vscode-icons:file-type-mongo",
-    "logos:postgresql",
-    "logos:mariadb-icon",
-    "skill-icons:cassandra-light",
-    "skill-icons:docker",
+    "vscode-icons:file-type-js-official",
   ];
 
   return (
@@ -278,7 +261,7 @@ function Technologies() {
       <div class="p-4 flex justify-center items-center flex-wrap gap-4">
         {technologies.map((technology) => (
           <Icon
-            class="w-8 h-8"
+            class="w-16 h-16"
             icon={technology}
             width="none"
             height="none"
